@@ -5,7 +5,7 @@ defmodule Petobot do
     import Supervisor.Spec, warn: false
 
     children = [
-      worker(Petobot.Slack, [])
+    	worker(Petobot.Slack, [], restart: :transient)
     ]
 
     opts = [strategy: :one_for_one, name: Petobot.Supervisor]

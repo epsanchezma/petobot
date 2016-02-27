@@ -1,4 +1,5 @@
 %{"certifi": {:hex, :certifi, "0.3.0"},
+  "elixir_feed_parser": {:hex, :elixir_feed_parser, "0.0.1"},
   "exjsx": {:hex, :exjsx, "3.1.0"},
   "hackney": {:hex, :hackney, "1.4.8"},
   "httpoison": {:hex, :httpoison, "0.8.1"},

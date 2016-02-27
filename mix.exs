@@ -11,12 +11,14 @@ defmodule Petobot.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :slack],
+    [applications: [:logger, :slack, :"elixir_feed_parser", :"httpoison"],
      mod: {Petobot, []}]
   end
 
   defp deps do
   	[{:slack, "~> 0.4.2"},
-    {:websocket_client, git: "https://github.com/jeremyong/websocket_client"},]
+    {:websocket_client, git: "https://github.com/jeremyong/websocket_client"},
+    {:"elixir_feed_parser", "~> 0.0.1"},
+    {:httpoison, "~> 0.8.0"},]
   end
 end
